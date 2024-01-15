@@ -2,7 +2,6 @@
 {
     public class AppSettings
     {
-        public string? AutenticacaoUrl { get; set; }
-        public string? AvesUrl { get; set; }
+        public string? BoletoApiUrl { get; set; }
     }
 }

@@ -68,7 +68,7 @@ namespace BoletoAPI.Apresentation.WebAPI.Controllers
         /// <returns>Retorna o layout do boleto.</returns>
         [ProducesResponseType(typeof(DadosBoletoDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
-        [HttpPost]
+        [HttpPost("boleto/obterboleto")]
         public async Task<IActionResult> GetBoleto(DadosBoletoDTO dadosBoletoDTO)
         {
             var gerarHTMLBoleto = await _boletoService.GerarHTMLBoleto(dadosBoletoDTO);
