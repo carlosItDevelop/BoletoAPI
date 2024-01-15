@@ -1,7 +1,6 @@
 using BoletoAPI.Apresentation.WebAPI;
 using BoletoAPI.Infrastructure.CossCutting;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

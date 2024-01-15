@@ -1,0 +1,52 @@
+{
+  "version": "4.5",
+  "lists": [
+    {
+      "title": "Application Intel",
+      "icon": "fal fa-info-circle",
+      "roles": [],
+      "items": [
+        {
+          "title": "Analytics Dashboard",
+          "showOnSeed": false,
+          "href": "intel_analytics_dashboard.html",
+          "roles": []
+        }
+      ]
+    },
+    {
+      "title": "Disciplina",
+      "icon": "fal fa-cog",
+      "roles": [],
+      "items": [
+        {
+          "title": "Lista de Disciplina",
+          "href": "disciplina_index",
+          "roles": []
+        },
+        {
+          "title": "Nova Disciplina",
+          "href": "disciplina_create",
+          "roles": []
+        }
+      ]
+    },
+    {
+      "title": "Documento",
+      "icon": "fal fa-cog",
+      "roles": [],
+      "items": [
+        {
+          "title": "Lista de Documento",
+          "href": "documento_index",
+          "roles": []
+        },
+        {
+          "title": "Novo Documento",
+          "href": "documento_create",
+          "roles": []
+        }
+      ]
+    }
+  ]
+}

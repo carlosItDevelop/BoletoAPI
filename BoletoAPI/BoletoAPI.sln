@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoletoAPI.Infrastructure.Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoletoAPI.Apresentation.WebAPI", "BoletoAPI.Presentation.WebAPI\BoletoAPI.Apresentation.WebAPI.csproj", "{2B856C57-2213-49AB-B362-DA1A3B6865B1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDTEC.GestorEducacional.BoletoMvc", "BoletoAPI.Presentation.Mvc\SDTEC.GestorEducacional.BoletoMvc.csproj", "{048EF5C9-A523-47F5-AA6B-69026066EF93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{2B856C57-2213-49AB-B362-DA1A3B6865B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B856C57-2213-49AB-B362-DA1A3B6865B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B856C57-2213-49AB-B362-DA1A3B6865B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{048EF5C9-A523-47F5-AA6B-69026066EF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{048EF5C9-A523-47F5-AA6B-69026066EF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{048EF5C9-A523-47F5-AA6B-69026066EF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{048EF5C9-A523-47F5-AA6B-69026066EF93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{4D5CA6D3-BC4E-4AAA-802F-7BFFA1FAB13D} = {B20E3238-AF29-4A67-BEB6-6E04AD186FAB}
 		{4DA17F9B-4666-4699-AC86-CB8408D53F46} = {B20E3238-AF29-4A67-BEB6-6E04AD186FAB}
 		{2B856C57-2213-49AB-B362-DA1A3B6865B1} = {B729659E-9B36-4A9A-9750-264B4159887D}
+		{048EF5C9-A523-47F5-AA6B-69026066EF93} = {B729659E-9B36-4A9A-9750-264B4159887D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7453758F-44B1-4EF7-91BE-21470EFCB501}
