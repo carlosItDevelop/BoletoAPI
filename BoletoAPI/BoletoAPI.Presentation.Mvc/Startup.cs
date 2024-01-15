@@ -1,4 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity.UI.Services;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using SDTEC.GestorEducacional.Models;
 
@@ -26,8 +31,6 @@ namespace SDTEC.GestorEducacional
             });
 
 
-            services.AddTransient<IEmailSender, EmailSender>();
-
             services
                 .AddControllersWithViews();
 
@@ -37,6 +40,7 @@ namespace SDTEC.GestorEducacional
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

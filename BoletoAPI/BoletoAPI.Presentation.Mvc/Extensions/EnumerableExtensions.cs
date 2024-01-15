@@ -23,7 +23,7 @@ namespace SDTEC.GestorEducacional.Extensions
         {
             var options = new JsonSerializerOptions
             {
-                IgnoreNullValues = true,
+                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
                 WriteIndented = indented,
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             };

@@ -26,7 +26,7 @@ namespace SDTEC.GestorEducacional.Models
             return new SmartNavigation(menu);
         }
 
-        private static List<ListItem> FillProperties(IEnumerable<ListItem> items, bool seedOnly, ListItem parent = null)
+        private static List<ListItem> FillProperties(IEnumerable<ListItem> items, bool seedOnly, ListItem? parent = null)
         {
             var result = new List<ListItem>();
 

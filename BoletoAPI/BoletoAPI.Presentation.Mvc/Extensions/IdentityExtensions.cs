@@ -1,7 +1,8 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Html;
-using Microsoft.AspNetCore.Identity;
 using SDTEC.GestorEducacional.Models;
 
 namespace SDTEC.GestorEducacional.Extensions
