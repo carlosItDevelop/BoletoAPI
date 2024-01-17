@@ -1,0 +1,61 @@
+﻿@model BoletoAPI.Application.DTOs.DadosBoletoDTO
+
+@{
+    ViewData ["Title"] = "Gerar Boleto";
+    ViewData ["PageName"] = "gerar_boleto";
+    ViewData ["Heading"] = "<i class='subheader-icon fal fa-edit'></i>  Novo Boleto";
+    ViewData ["Category1"] = "Boleto";
+    ViewData ["PageDescription"] = "Processo de Geração de Boleto";
+}
+<div class="row">
+    <div class="col-xl-12 col-md-12 col-sm-12">
+        <div id="panel-1" class="panel">
+            <div class="panel-hdr">
+                <h2>
+                    @*Boleto <span class="fw-300"><i>Gerar</i></span>*@
+                </h2>
+                <div class="panel-toolbar">
+                    <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip" data-offset="0,10" data-original-title="Collapse"></button>
+                    <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip" data-offset="0,10" data-original-title="Fullscreen"></button>
+                    <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10" data-original-title="Close"></button>
+                </div>
+            </div>
+            <div class="panel-container show">
+                <div class="panel-content">
+                    <div class="col-md-12">
+                        <form asp-action="GetBoleto" asp-controller="Boletos" method="post">
+
+                            <vc:Summary></vc:Summary>
+
+                            <partial name="PartialViews/_boleto_create" />
+
+                            <div class="form-group">
+                                <button type="submit" value="Gerar Boleto" class="btn btn-outline-success">Gerar Boleto</button>
+                                <a href="javascript:window.history.back();" class="btn btn-outline-info">Voltar</a>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section ScriptsBlock {
+    <script type="text/javascript">
+        var example_gridsize = $("#example-gridsize");
+        $("#gridrange").on("input change", function () {
+            //do something
+            example_gridsize.attr("placeholder", ".col-" + $(this).val());
+            example_gridsize.parent().removeClass().addClass("col-" + $(this).val())
+            console.log("col-" + $(this).val());
+        });
+    </script>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,5 +1,6 @@
 ﻿namespace SDTEC.GestorEducacional.Models
 {
+
     public class Theme
     {
         public string ThemeVersion { get; set; }

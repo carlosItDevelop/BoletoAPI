@@ -26,6 +26,7 @@ namespace BoletoAPI.Application.DTOs
         public string Cidade { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "O campo {0} é obrigatório.")]
+        [StringLength(maximumLength:2 , ErrorMessage = "O campo {0} deve ter {2} caracteres", MinimumLength = 2)]
         public string Estado { get; set; } = string.Empty;
 
         #endregion Propriedades

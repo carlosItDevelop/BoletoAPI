@@ -4,7 +4,6 @@ using SDTEC.GestorEducacional.Models;
 
 namespace SDTEC.GestorEducacional.BoletoMvc.Controllers
 {
-    [ApiController]
     public class MainController : Controller
     {
         protected bool ResponsePossuiErros(ResponseResult resposta)
@@ -22,13 +21,11 @@ namespace SDTEC.GestorEducacional.BoletoMvc.Controllers
             return false;
         }
 
-        [Route("adicionarerrovalidacao")]
         public void AdicionarErroValidacao(string mensagem)
         {
             ModelState.AddModelError(string.Empty, mensagem);
         }
 
-        [Route("operacaoinvalida")]
         protected bool OperacaoValida()
         {
             return ModelState.ErrorCount == 0;

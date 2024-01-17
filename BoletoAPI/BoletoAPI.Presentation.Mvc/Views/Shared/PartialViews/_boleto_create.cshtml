@@ -1,0 +1,220 @@
+﻿@model BoletoAPI.Application.DTOs.DadosBoletoDTO
+
+<div class="form-row form-group">
+
+    @* <h3>Boleto Informações Básicas:</h3> *@
+
+    <div class="col-md-6 mb-3">
+        <label asp-for="NossoNumero" class="control-label"></label>
+        <input asp-for="NossoNumero" class="form-control" placeholder="Nosso número" />
+        <span asp-validation-for="NossoNumero" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="Vencimento" class="control-label"></label>
+        <input asp-for="Vencimento" class="form-control" type="datetime-local" />
+        <span asp-validation-for="Vencimento" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="CampoLivre" class="control-label"></label>
+        <input asp-for="CampoLivre" class="form-control" />
+        <span asp-validation-for="CampoLivre" class="text-danger"></span>
+    </div>
+
+
+</div>
+
+
+<div class="form-row form-group">
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="Valor" class="control-label"></label>
+        <input asp-for="Valor" class="form-control" />
+        <span asp-validation-for="Valor" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="DataEmissao" class="control-label"></label>
+        <input asp-for="DataEmissao" class="form-control" type="datetime-local" />
+        <span asp-validation-for="DataEmissao" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="DataProcessamento" class="control-label"></label>
+        <input asp-for="DataProcessamento" class="form-control" type="datetime-local" />
+        <span asp-validation-for="DataProcessamento" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="TipoBanco" class="control-label"></label>
+        <input asp-for="TipoBanco" class="form-control" />
+        <span asp-validation-for="TipoBanco" class="text-danger"></span>
+    </div>
+
+
+
+
+</div>
+
+<div class="form-row form-group">
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="NumeroDocumento" class="control-label"></label>
+        <input asp-for="NumeroDocumento" class="form-control" />
+        <span asp-validation-for="NumeroDocumento" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <label asp-for="SacadoDTO.Nome" class="control-label"></label>
+        <input asp-for="SacadoDTO.Nome" class="form-control" />
+        <span asp-validation-for="SacadoDTO.Nome" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="SacadoDTO.CPF" class="control-label"></label>
+        <input asp-for="SacadoDTO.CPF" class="form-control" />
+        <span asp-validation-for="SacadoDTO.CPF" class="text-danger"></span>
+    </div>
+
+</div>
+
+
+<div class="form-row form-group">
+
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="SacadoDTO.EnderecoDTO.CEP" class="control-label"></label>
+        <input asp-for="SacadoDTO.EnderecoDTO.CEP" class="form-control" />
+        <span asp-validation-for="SacadoDTO.EnderecoDTO.CEP" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="SacadoDTO.EnderecoDTO.Logradouro" class="control-label"></label>
+        <input asp-for="SacadoDTO.EnderecoDTO.Logradouro" class="form-control" />
+        <span asp-validation-for="SacadoDTO.EnderecoDTO.Logradouro" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="SacadoDTO.EnderecoDTO.Numero" class="control-label"></label>
+        <input asp-for="SacadoDTO.EnderecoDTO.Numero" class="form-control" />
+        <span asp-validation-for="SacadoDTO.EnderecoDTO.Numero" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="SacadoDTO.EnderecoDTO.Bairro" class="control-label"></label>
+        <input asp-for="SacadoDTO.EnderecoDTO.Bairro" class="form-control" />
+        <span asp-validation-for="SacadoDTO.EnderecoDTO.Bairro" class="text-danger"></span>
+    </div>
+
+
+
+</div>
+
+
+<div class="form-row form-group">
+
+
+
+
+    <div class="col-md-6 mb-3">
+        <label asp-for="SacadoDTO.EnderecoDTO.Cidade" class="control-label"></label>
+        <input asp-for="SacadoDTO.EnderecoDTO.Cidade" class="form-control" />
+        <span asp-validation-for="SacadoDTO.EnderecoDTO.Cidade" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <label asp-for="SacadoDTO.EnderecoDTO.Estado" class="control-label"></label>
+        <input asp-for="SacadoDTO.EnderecoDTO.Estado" class="form-control" />
+        <span asp-validation-for="SacadoDTO.EnderecoDTO.Estado" class="text-danger"></span>
+    </div>
+
+
+</div>
+
+<div class="form-row form-group">
+
+    @*     <h3>Beneficiário:</h3> *@
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="BeneficiarioDTO.Codigo" class="control-label"></label>
+        <input asp-for="BeneficiarioDTO.Codigo" class="form-control" />
+        <span asp-validation-for="BeneficiarioDTO.Codigo" class="text-danger"></span>
+    </div>
+
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="BeneficiarioDTO.CodigoDV" class="control-label"></label>
+        <input asp-for="BeneficiarioDTO.CodigoDV" class="form-control" />
+        <span asp-validation-for="BeneficiarioDTO.CodigoDV" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="BeneficiarioDTO.CodigoFormatado" class="control-label"></label>
+        <input asp-for="BeneficiarioDTO.CodigoFormatado" class="form-control" />
+        <span asp-validation-for="BeneficiarioDTO.CodigoFormatado" class="text-danger"></span>
+    </div>
+
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="BeneficiarioDTO.CodigoTransmissao" class="control-label"></label>
+        <input asp-for="BeneficiarioDTO.CodigoTransmissao" class="form-control" />
+        <span asp-validation-for="BeneficiarioDTO.CodigoTransmissao" class="text-danger"></span>
+    </div>
+
+
+</div>
+
+<div class="form-row form-group">
+
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="BeneficiarioDTO.CPFCNPJ" class="control-label"></label>
+        <input asp-for="BeneficiarioDTO.CPFCNPJ" class="form-control" />
+        <span asp-validation-for="BeneficiarioDTO.CPFCNPJ" class="text-danger"></span>
+    </div>
+
+
+    <div class="col-md-3 mb-3">
+        <label asp-for="BeneficiarioDTO.Nome" class="control-label"></label>
+        <input asp-for="BeneficiarioDTO.Nome" class="form-control" />
+        <span asp-validation-for="BeneficiarioDTO.Nome" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <label asp-for="BeneficiarioDTO.Observacoes" class="control-label"></label>
+        <input asp-for="BeneficiarioDTO.Observacoes" class="form-control" />
+        <span asp-validation-for="BeneficiarioDTO.Observacoes" class="text-danger"></span>
+    </div>
+
+
+</div>
+
+<div class="form-row form-group">
+
+    @*     <h3>Conta Bancária:</h3> *@
+
+    <div class="col-md-4 mb-3">
+        <label asp-for="BeneficiarioDTO.ContaBancariaDTO.Agencia" class="control-label"></label>
+        <input asp-for="BeneficiarioDTO.ContaBancariaDTO.Agencia" class="form-control" />
+        <span asp-validation-for="BeneficiarioDTO.ContaBancariaDTO.Agencia" class="text-danger"></span>
+    </div>
+
+
+    <div class="col-md-4 mb-3">
+        <label asp-for="BeneficiarioDTO.ContaBancariaDTO.Conta" class="control-label"></label>
+        <input asp-for="BeneficiarioDTO.ContaBancariaDTO.Conta" class="form-control" />
+        <span asp-validation-for="BeneficiarioDTO.ContaBancariaDTO.Conta" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <label asp-for="BeneficiarioDTO.ContaBancariaDTO.CarteiraPadrao" class="control-label"></label>
+        <input asp-for="BeneficiarioDTO.ContaBancariaDTO.CarteiraPadrao" class="form-control" />
+        <span asp-validation-for="BeneficiarioDTO.ContaBancariaDTO.CarteiraPadrao" class="text-danger"></span>
+    </div>
+
+
+
+</div>
+
+

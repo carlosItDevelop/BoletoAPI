@@ -13,24 +13,11 @@ namespace BoletoAPI.Infrastructure.CossCutting
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            #region Repositórios
-
             services.AddScoped<IBoletoRepository, BoletoRepository>();
             //services.AddScoped<IBanco, Banco>();
 
-            #endregion Repositórios
-
-            #region Services
-
             services.AddScoped<IBoletoService, BoletoService>();
-
-            #endregion Services
-
-            #region Configuração do AutoMapper
-
             services.AddAutoMapper(typeof(DomainParaDTO));
-
-            #endregion Configuração do AutoMapper
 
             return services;
         }
